@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+{% import "includes/cards.html" as cards %}
+
+{% block pageTitle %}
+  IFS Prototypes and components library
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">
+    IFS Digital
+</h1>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Pattern library', 'A library of visual and interaction patterns for IFS interfaces.', '/pattern-library') }}
+    </div>
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Prototypes', 'Links and information on prototypes for testing.', '/prototypes') }}
+    </div>
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Sprint notes', 'A sprint-by-sprint list of what we are doing in IFS.', '/sprint-notes') }}
+    </div>
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Content guide', 'Content guide.', '/content-guide') }}
+    </div>
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Blog', 'What we are up to', '/blog') }}
+    </div>
+    <div class="govuk-grid-column-one-third">
+        {{ cards.card('Vision and objectives', 'IFS principles and examples of how they have been used.', '/vision-objectives') }}
+    </div>
+</div>
+
+{% endblock %}
