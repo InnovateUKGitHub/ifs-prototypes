@@ -19,9 +19,3 @@ You can view the IFS library and prototypes here:
 3. run the app: ``` npm start ```
 4. view locally: [http://localhost:3000](http://localhost:3000)
 5. you will need the username and password supplied from another member of the team 
-
-
-### Static prototypes/wireframes
-We use [Adobe XD](https://www.adobe.com/uk/products/xd.html) and host using their built-in service.
-
-Download the [design library](/public/assets/files/Master-library.xd). If you make any updates, add to git and create a pull request.
