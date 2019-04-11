@@ -1,0 +1,361 @@
+
+{% extends "layout.html" %}
+{% import "includes/sub-navigation.html" as subNavigation %}
+
+{% block pageTitle %}
+Print version with CSS
+{% endblock %}
+
+{% set prototypesActive = true %}
+
+{% block content %}
+
+<style>
+    @media print {
+
+        header,
+        footer,
+        .govuk-phase-banner {
+            display: none !important;
+        }
+
+        .letter-size {
+            padding: 4em;
+        }
+        .letter-image {
+            max-width: 12em;
+            padding: 0 0 4em 0;
+        }
+
+
+    }
+    .letter {
+
+    }
+    .letter-logo {
+        margin: 0 auto;
+    }
+    .letter-size,
+    .letter-size * {
+        font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+        font-size: 19px;
+    }
+    .letter-image {
+        /*max-width: 300px;*/
+        padding: 0 0 60px 0;
+    }
+
+    .letter-table {
+        border-collapse: collapse;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .letter-table th,
+    .letter-table td {
+        padding: 10px;
+        border: 1px solid #000;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .letter-table .letter-table--right {
+        text-align: right;
+    }
+    .letter-list {
+
+    }
+    .letter-list li {
+        padding: 4px 0
+    }
+
+    .alignright {
+        text-align: right!important;
+    }
+    .aligncentre {
+        text-align: center;
+    }
+</style>
+
+<div class="govuk-grid-row letter">
+    <div class="govuk-grid-column-full letter-size">
+        <div><button id="removeStuff">Remove unwanted elements</button></div>
+        <div class="letter-logo" style="width:100%;text-align:center;"><img src="/public/images/innovate_logo_small.png" class="letter-image" style=""> </div>
+        <p class="alignright" style="text-align: right;">
+            Louis Morgan<br>
+            Big Riffs And Insane Solos Ltd 1<br>
+            Shred Street<br>
+            Bath<br>
+            BA1 5LR<br>
+        </p>
+        <p>
+            <strong>Application number:</strong> 111<br>
+           <strong>Project title:</strong> Elbow grease<br>
+           <strong>Competition:</strong> New designs for a circular economy<br>
+           <strong>Date:</strong> 1 March 2019 Grant offer letter<br>
+        </p>
+        <p>
+            Dear Louis Morgan,
+        </p>
+        <p>
+            We are pleased to confirm your grant award. It is subject to the terms and conditions you agreed to by submitting your application in the Innovation Funding Service. This includes any additional terms and conditions attached to this notice.
+        </p>
+        <p>Your individual grant allocations are detailed in the attached annexes. These allocations are final and not subject to further negotiation or amendment.
+        </p>
+
+
+        <p><strong>Queries raised</strong></p>
+        <ol class="letter-list">
+            <li>Sed finibus efficitur turpis, luctus malesuada dui pretium ut.</li>
+            <li>Nullam rutrum condimentum faucibus. Praesent vitae dapibus massa. Nam eget augue a urna porta iaculis quis et erat. Etiam tellus sapien, posuere eget tincidunt</li>
+            <li>Sed finibus efficitur turpis, luctus malesuada dui pretium ut</li>
+            <li>Nullam rutrum condimentum faucibus. Praesent vitae dapibus massa. Nam eget augue a urna porta iaculis quis et erat. Etiam tellus sapien, posuere eget tincidunt</li>
+            <li>Donec sed metus ac felis ornare fringilla. Vivamus eu accumsan ex. Quisque scelerisque aliquet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus</li>
+            <li>Praesent vitae dapibus massa. Nam eget augue a urna porta iaculis quis et erat. Etiam tellus sapien, posuere eget tincidunt at</li>
+        </ol>
+
+        <h2 class="heading-small">Accepting your award </h2>
+        <p>To confirm you want to accept, please complete and sign the annex attached to this notice. You should return this through the Innovation Funding Service. </p>
+        <p>Acceptance includes confirming your project start and end dates. Once your acceptance is approved, these can only be changed by submitting a request through your Monitoring Officer. </p>
+        <p>Your award will be withdrawn if you do not confirm your start date within one calendar month of this letter. Any costs incurred before that start date will be ineligible for grant unless you have made other arrangements. </p>
+        <p>We wish you every success with your project. Yours sincerely </p>
+        <p>Ben Morris
+            <br>Delivery and Insight Manager
+        </p>
+
+
+
+        <table class=" letter-table ">
+            <thead>
+                <tr>
+                    <th class="">Summary</th>
+                    <th class=" alignright">Totals (£)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="">Total project costs</td>
+                    <td class="alignright">200, 900</td>
+                </tr>
+                <tr>
+                    <td class="">Total project grant</td>
+                    <td class="alignright">412, 500</td>
+                </tr>
+                <tr>
+                    <td class="">Rate of grant (%)</td>
+                    <td class="alignright">65</td>
+                </tr>
+                <tr>
+                    <td class="">Total cost</td>
+                    <td class="alignright"><strong>613,400</strong></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br>
+
+
+        <table class="letter-table ">
+            <thead><tr><th title="Field #1">Industry costs</th>
+                <th title="Field #2">JAGUAR LAND ROVER LIMITED</th>
+                <th title="Field #3">Five Landis Ltd</th>
+                <th title="Field #4">Horizon Instruments Ltd</th>
+                <th title="Field #5">HSSMI Ltd</th>
+                <th title="Field #6">JW Froehlich UK Ltd</th>
+                <th title="Field #7">Mapal Ltd</th>
+                <th title="Field #8">MTC Operations Ltd</th>
+                <th title="Field #9">Total (industry)</th>
+            </tr></thead>
+            <tbody><tr>
+                <td>Labour</td>
+                <td>£1,160,876 </td>
+                <td>£688,270 </td>
+                <td>£242,214 </td>
+                <td>£351,877 </td>
+                <td>£276,313 </td>
+                <td>£186,476 </td>
+                <td>£343,930 </td>
+                <td>£3,249,956 </td>
+            </tr>
+            <tr>
+                <td>Overheads</td>
+                <td>£1,034,341 </td>
+                <td>£603,192 </td>
+                <td>£92,402 </td>
+                <td>£201,106 </td>
+                <td>£215,911 </td>
+                <td>£37,295 </td>
+                <td>£333,612 </td>
+                <td>£2,517,859 </td>
+            </tr>
+            <tr>
+                <td>Materials</td>
+                <td>£1,310,100 </td>
+                <td>£194,400 </td>
+                <td>£0 </td>
+                <td>£15,000 </td>
+                <td>£20,000 </td>
+                <td>£45,000 </td>
+                <td>£3,000 </td>
+                <td>£1,587,500 </td>
+            </tr>
+            <tr>
+                <td>Capital usage</td>
+                <td>£85,772 </td>
+                <td>£76,682 </td>
+                <td>£0 </td>
+                <td>£2,999 </td>
+                <td>£0 </td>
+                <td>£47,999 </td>
+                <td>£11,228 </td>
+                <td>£224,680 </td>
+            </tr>
+            <tr>
+                <td>Subcontract </td>
+                <td>£662,903 </td>
+                <td>£0 </td>
+                <td>£80,670 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£45,000 </td>
+                <td>£0 </td>
+                <td>£788,573 </td>
+            </tr>
+            <tr>
+                <td>Travel and subsistence</td>
+                <td>£55,000 </td>
+                <td>£10,200 </td>
+                <td>£16,500 </td>
+                <td>£16,100 </td>
+                <td>£4,000 </td>
+                <td>£15,500 </td>
+                <td>£4,404 </td>
+                <td>£121,704 </td>
+            </tr>
+            <tr>
+                <td>Other Costs1</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£10,000 </td>
+                <td>£0 </td>
+                <td>£10,000 </td>
+                <td>£55,000 </td>
+                <td>£75,000 </td>
+            </tr>
+            <tr>
+                <td>Other Costs2</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+            </tr>
+            <tr>
+                <td>Other Costs3</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+            </tr>
+            <tr>
+                <td>Other Costs4</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+            </tr>
+            <tr>
+                <td>Other Costs5</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+            </tr>
+            <tr>
+                <td>Other Costs WBBA</td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+                <td>£0 </td>
+            </tr>
+            <tr>
+                <td>Total eligible costs</td>
+                <td>£4,308,992 </td>
+                <td>£1,572,744 </td>
+                <td>£431,786 </td>
+                <td>£597,082 </td>
+                <td>£516,224 </td>
+                <td>£387,270 </td>
+                <td>£751,174 </td>
+                <td>£8,565,272 </td>
+            </tr>
+            <tr>
+                <td>Rate of grant (%)</td>
+                <td>38.00%</td>
+                <td>39.00%</td>
+                <td>46.00%</td>
+                <td>100.00%</td>
+                <td>39.00%</td>
+                <td>46.00%</td>
+                <td>100.00%</td>
+                <td>48.77%</td>
+            </tr>
+            <tr>
+                <td>Total grant</td>
+                <td>£1,637,417 </td>
+                <td>£613,370 </td>
+                <td>£198,621 </td>
+                <td>£597,082 </td>
+                <td>£201,327 </td>
+                <td>£178,144 </td>
+                <td>£751,174 </td>
+                <td>£4,177,135 </td>
+            </tr>
+            </tbody></table>
+
+
+    </div>
+    <div class="govuk-grid-column-one-quarter">&nbsp;</div>
+
+</div>
+
+{% endblock %}
+{% block pageScripts %}
+
+<script>
+  jQuery(document).ready(function() {
+    console.log( "ready!" );
+    $('#removeStuff').on('click', function() {
+      $('header').remove();
+      $('footer').remove();
+      $('.govuk-phase-banner').remove();
+      $('#removeStuff').remove();
+      $('.govuk-skip-link').remove();
+      $('*[href="/public/stylesheets/application.css"]').remove();
+    });
+  });
+
+</script>
+
+{% endblock %}
