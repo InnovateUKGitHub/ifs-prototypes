@@ -38,7 +38,7 @@ Print version with CSS
     .letter-size,
     .letter-size * {
         font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-        font-size: 19px;
+        font-size: 16px;
     }
     .letter-image {
         /*max-width: 300px;*/
@@ -48,15 +48,19 @@ Print version with CSS
     .letter-table {
         border-collapse: collapse;
         max-width: 100%;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .letter-table th,
     .letter-table td {
-        padding: 10px;
+        padding: 4px;
         border: 1px solid #000;
         text-align: left;
-        font-size: 16px;
+        font-size: 12px;
+    }
+
+    .letter-table strong {
+        font-size: 12px;
     }
 
     .letter-table .letter-table--right {
@@ -69,19 +73,13 @@ Print version with CSS
         padding: 4px 0
     }
 
-    .alignright {
-        text-align: right!important;
-    }
-    .aligncentre {
-        text-align: center;
-    }
 </style>
 
 <div class="govuk-grid-row letter">
     <div class="govuk-grid-column-full letter-size">
         <div><button id="removeStuff">Remove unwanted elements</button></div>
         <div class="letter-logo" style="width:100%;text-align:center;"><img src="/public/images/innovate_logo_small.png" class="letter-image" style=""> </div>
-        <p class="alignright" style="text-align: right;">
+        <p style="text-align:right;" style="text-align: right;">
             Louis Morgan<br>
             Big Riffs And Insane Solos Ltd 1<br>
             Shred Street<br>
@@ -114,7 +112,7 @@ Print version with CSS
             <li>Praesent vitae dapibus massa. Nam eget augue a urna porta iaculis quis et erat. Etiam tellus sapien, posuere eget tincidunt at</li>
         </ol>
 
-        <h2 class="heading-small">Accepting your award </h2>
+        <h2 class="heading-medium">Accepting your award </h2>
         <p>To confirm you want to accept, please complete and sign the annex attached to this notice. You should return this through the Innovation Funding Service. </p>
         <p>Acceptance includes confirming your project start and end dates. Once your acceptance is approved, these can only be changed by submitting a request through your Monitoring Officer. </p>
         <p>Your award will be withdrawn if you do not confirm your start date within one calendar month of this letter. Any costs incurred before that start date will be ineligible for grant unless you have made other arrangements. </p>
@@ -122,218 +120,261 @@ Print version with CSS
         <p>Ben Morris
             <br>Delivery and Insight Manager
         </p>
+        <br style="page-break-before: always">
+        <h2 class="heading-medium">Annex 1: acceptance of award</h2>
+        <p>
+            <strong>File reference:</strong> 113209<br>
+            <strong>Application number:</strong> 21789<br>
+            <strong>Date:</strong> Monday, 15 April 2019<br>
+            <strong>Competition: APC 11:</strong> advancing the UK's low carbon automotive capability<br>
+            <strong>Project title:</strong> Re-purpose of ICE Infrastructure for EDU<br>
+        </p>
 
+        <p>I accept the offer on behalf of the project, set out in the grant offer letter and in the schedules attached. </p>
+        <p>For the purposes of the offer:</p>
+        <p >
+            (i)	Project start date	______________________________________________ <br><br>
+            (ii)	Project end date	______________________________________________ <br>
+        </p>
 
+        <p>Please note: to make administration simpler, the project start date must be the first day of a calendar month. Please also make sure the project end date falls on the last day of a calendar month, by selecting an appropriate project length.</p>
+
+        <br><br><br><br>
+
+        <p>
+            <strong>Signed:</strong> ______________________________________________ <br><br>
+            Director for and on behalf of JAGUAR LAND ROVER LIMITED<br><br>
+        </p>
+
+        <br><br>
+
+        <p>
+            <strong>Print name:</strong> ______________________________________________ <br><br>
+
+        </p>
+
+        <br><br>
+
+        <p>
+            <strong>Date:</strong> ______________________________________________ <br><br>
+
+        </p>
+
+        <br style="page-break-before: always">
+        <h2 class="heading-medium">Example small table</h2>
 
         <table class=" letter-table ">
             <thead>
                 <tr>
-                    <th class="">Summary</th>
-                    <th class=" alignright">Totals (£)</th>
+                    <th  class="">Summary</th>
+                    <th style="text-align:right;">Totals (£)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="">Total project costs</td>
-                    <td class="alignright">200, 900</td>
+                    <td style="text-align:right;">200, 900</td>
                 </tr>
                 <tr>
                     <td class="">Total project grant</td>
-                    <td class="alignright">412, 500</td>
+                    <td style="text-align:right;">412, 500</td>
                 </tr>
                 <tr>
                     <td class="">Rate of grant (%)</td>
-                    <td class="alignright">65</td>
+                    <td style="text-align:right;">65</td>
                 </tr>
                 <tr>
                     <td class="">Total cost</td>
-                    <td class="alignright"><strong>613,400</strong></td>
+                    <td style="text-align:right;"><strong>613,400</strong></td>
                 </tr>
 
             </tbody>
         </table>
+        <br style="page-break-before: always">
+        <p class="mso-pagination: page-break-before">break</p>
+        <h2 class="heading-medium">Example large</h2>
 
-        <br>
-
-
-        <table class="letter-table ">
-            <thead><tr><th title="Field #1">Industry costs</th>
-                <th title="Field #2">JAGUAR LAND ROVER LIMITED</th>
-                <th title="Field #3">Five Landis Ltd</th>
-                <th title="Field #4">Horizon Instruments Ltd</th>
-                <th title="Field #5">HSSMI Ltd</th>
-                <th title="Field #6">JW Froehlich UK Ltd</th>
-                <th title="Field #7">Mapal Ltd</th>
-                <th title="Field #8">MTC Operations Ltd</th>
-                <th title="Field #9">Total (industry)</th>
-            </tr></thead>
+        <table class="letter-table">
+            <thead>
+                <tr>
+                    <th title="Field #1">Industry costs</th>
+                    <th title="Field #2" style="text-align:right;">JAGUAR LAND ROVER LIMITED</th>
+                    <th title="Field #3" style="text-align:right;">Five Landis Ltd</th>
+                    <th title="Field #4" style="text-align:right;">Horizon Instruments Ltd</th>
+                    <th title="Field #5" style="text-align:right;">HSSMI Ltd</th>
+                    <th title="Field #6" style="text-align:right;">JW Froehlich UK Ltd</th>
+                    <th title="Field #7" style="text-align:right;">Mapal Ltd</th>
+                    <th title="Field #8" style="text-align:right;">MTC Operations Ltd</th>
+                    <th title="Field #9" style="text-align:right;">Total (industry)</th>
+                </tr>
+            </thead>
             <tbody><tr>
                 <td>Labour</td>
-                <td>£1,160,876 </td>
-                <td>£688,270 </td>
-                <td>£242,214 </td>
-                <td>£351,877 </td>
-                <td>£276,313 </td>
-                <td>£186,476 </td>
-                <td>£343,930 </td>
-                <td>£3,249,956 </td>
+                <td style="text-align:right;">£1,160,876 </td>
+                <td style="text-align:right;">£688,270 </td>
+                <td style="text-align:right;">£242,214 </td>
+                <td style="text-align:right;">£351,877 </td>
+                <td style="text-align:right;">£276,313 </td>
+                <td style="text-align:right;">£186,476 </td>
+                <td style="text-align:right;">£343,930 </td>
+                <td style="text-align:right;">£3,249,956 </td>
             </tr>
             <tr>
                 <td>Overheads</td>
-                <td>£1,034,341 </td>
-                <td>£603,192 </td>
-                <td>£92,402 </td>
-                <td>£201,106 </td>
-                <td>£215,911 </td>
-                <td>£37,295 </td>
-                <td>£333,612 </td>
-                <td>£2,517,859 </td>
+                <td style="text-align:right;">£1,034,341 </td>
+                <td style="text-align:right;">£603,192 </td>
+                <td style="text-align:right;">£92,402 </td>
+                <td style="text-align:right;">£201,106 </td>
+                <td style="text-align:right;">£215,911 </td>
+                <td style="text-align:right;">£37,295 </td>
+                <td style="text-align:right;">£333,612 </td>
+                <td style="text-align:right;">£2,517,859 </td>
             </tr>
             <tr>
                 <td>Materials</td>
-                <td>£1,310,100 </td>
-                <td>£194,400 </td>
-                <td>£0 </td>
-                <td>£15,000 </td>
-                <td>£20,000 </td>
-                <td>£45,000 </td>
-                <td>£3,000 </td>
-                <td>£1,587,500 </td>
+                <td style="text-align:right;">£1,310,100 </td>
+                <td style="text-align:right;">£194,400 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£15,000 </td>
+                <td style="text-align:right;">£20,000 </td>
+                <td style="text-align:right;">£45,000 </td>
+                <td style="text-align:right;">£3,000 </td>
+                <td style="text-align:right;">£1,587,500 </td>
             </tr>
             <tr>
                 <td>Capital usage</td>
-                <td>£85,772 </td>
-                <td>£76,682 </td>
-                <td>£0 </td>
-                <td>£2,999 </td>
-                <td>£0 </td>
-                <td>£47,999 </td>
-                <td>£11,228 </td>
-                <td>£224,680 </td>
+                <td style="text-align:right;">£85,772 </td>
+                <td style="text-align:right;">£76,682 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£2,999 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£47,999 </td>
+                <td style="text-align:right;">£11,228 </td>
+                <td style="text-align:right;">£224,680 </td>
             </tr>
             <tr>
                 <td>Subcontract </td>
-                <td>£662,903 </td>
-                <td>£0 </td>
-                <td>£80,670 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£45,000 </td>
-                <td>£0 </td>
-                <td>£788,573 </td>
+                <td style="text-align:right;">£662,903 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£80,670 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£45,000 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£788,573 </td>
             </tr>
             <tr>
                 <td>Travel and subsistence</td>
-                <td>£55,000 </td>
-                <td>£10,200 </td>
-                <td>£16,500 </td>
-                <td>£16,100 </td>
-                <td>£4,000 </td>
-                <td>£15,500 </td>
-                <td>£4,404 </td>
-                <td>£121,704 </td>
+                <td style="text-align:right;">£55,000 </td>
+                <td style="text-align:right;">£10,200 </td>
+                <td style="text-align:right;">£16,500 </td>
+                <td style="text-align:right;">£16,100 </td>
+                <td style="text-align:right;">£4,000 </td>
+                <td style="text-align:right;">£15,500 </td>
+                <td style="text-align:right;">£4,404 </td>
+                <td style="text-align:right;">£121,704 </td>
             </tr>
             <tr>
                 <td>Other Costs1</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£10,000 </td>
-                <td>£0 </td>
-                <td>£10,000 </td>
-                <td>£55,000 </td>
-                <td>£75,000 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£10,000 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£10,000 </td>
+                <td style="text-align:right;">£55,000 </td>
+                <td style="text-align:right;">£75,000 </td>
             </tr>
             <tr>
                 <td>Other Costs2</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
             </tr>
             <tr>
                 <td>Other Costs3</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
             </tr>
             <tr>
                 <td>Other Costs4</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
             </tr>
             <tr>
                 <td>Other Costs5</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
             </tr>
             <tr>
                 <td>Other Costs WBBA</td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
-                <td>£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
+                <td style="text-align:right;">£0 </td>
             </tr>
             <tr>
                 <td>Total eligible costs</td>
-                <td>£4,308,992 </td>
-                <td>£1,572,744 </td>
-                <td>£431,786 </td>
-                <td>£597,082 </td>
-                <td>£516,224 </td>
-                <td>£387,270 </td>
-                <td>£751,174 </td>
-                <td>£8,565,272 </td>
+                <td style="text-align:right;">£4,308,992 </td>
+                <td style="text-align:right;">£1,572,744 </td>
+                <td style="text-align:right;">£431,786 </td>
+                <td style="text-align:right;">£597,082 </td>
+                <td style="text-align:right;">£516,224 </td>
+                <td style="text-align:right;">£387,270 </td>
+                <td style="text-align:right;">£751,174 </td>
+                <td style="text-align:right;">£8,565,272 </td>
             </tr>
             <tr>
                 <td>Rate of grant (%)</td>
-                <td>38.00%</td>
-                <td>39.00%</td>
-                <td>46.00%</td>
-                <td>100.00%</td>
-                <td>39.00%</td>
-                <td>46.00%</td>
-                <td>100.00%</td>
-                <td>48.77%</td>
+                <td style="text-align:right;">38.00%</td>
+                <td style="text-align:right;">39.00%</td>
+                <td style="text-align:right;">46.00%</td>
+                <td style="text-align:right;">100.00%</td>
+                <td style="text-align:right;">39.00%</td>
+                <td style="text-align:right;">46.00%</td>
+                <td style="text-align:right;">100.00%</td>
+                <td style="text-align:right;">48.77%</td>
             </tr>
             <tr>
                 <td>Total grant</td>
-                <td>£1,637,417 </td>
-                <td>£613,370 </td>
-                <td>£198,621 </td>
-                <td>£597,082 </td>
-                <td>£201,327 </td>
-                <td>£178,144 </td>
-                <td>£751,174 </td>
-                <td>£4,177,135 </td>
+                <td style="text-align:right;">£1,637,417 </td>
+                <td style="text-align:right;">£613,370 </td>
+                <td style="text-align:right;">£198,621 </td>
+                <td style="text-align:right;">£597,082 </td>
+                <td style="text-align:right;">£201,327 </td>
+                <td style="text-align:right;">£178,144 </td>
+                <td style="text-align:right;">£751,174 </td>
+                <td style="text-align:right;">£4,177,135 </td>
             </tr>
             </tbody></table>
-
+        <br><br><br>
 
     </div>
     <div class="govuk-grid-column-one-quarter">&nbsp;</div>
@@ -345,6 +386,7 @@ Print version with CSS
 
 <script>
   jQuery(document).ready(function() {
+    // quick 'n' dirty
     console.log( "ready!" );
     $('#removeStuff').on('click', function() {
       $('header').remove();
