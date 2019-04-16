@@ -78,7 +78,7 @@ Print version with CSS
 <div class="govuk-grid-row letter">
     <div class="govuk-grid-column-full letter-size">
         <div><button id="removeStuff">Remove unwanted elements</button></div>
-        <div class="letter-logo" style="width:100%;text-align:center;"><img src="/public/images/innovate_logo_small.png" class="letter-image" style=""> </div>
+        <div class="letter-logo" id="innovateLogo" style="width:100%;text-align:center;"><img src="/public/images/innovate_logo_small.png" class="letter-image" style=""> </div>
         <p style="text-align:right;" style="text-align: right;">
             Arnold Simpson<br>
             Big Riffs And Insane Solos Ltd 1<br>
@@ -393,6 +393,7 @@ Print version with CSS
       $('footer').remove();
       $('.govuk-phase-banner').remove();
       $('#removeStuff').remove();
+      $('#innovateLogo').remove();
       $('.govuk-skip-link').remove();
       $('*[href="/public/stylesheets/application.css"]').remove();
     });
