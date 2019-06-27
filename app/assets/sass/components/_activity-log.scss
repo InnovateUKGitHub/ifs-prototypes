@@ -1,9 +1,12 @@
 .activity-log {
   width: 100%;
 
+  & > li {
+    margin-bottom: 10px;
+  }
+
   // .activity-log__item
   &__item {
-    margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid govuk-colour("grey-2");
     clear: both;
