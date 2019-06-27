@@ -1,0 +1,143 @@
+
+{% extends "layout.html" %}
+{% import "includes/sub-navigation.html" as subNavigation %}
+
+{% block pageTitle %}
+Activity log
+{% endblock %}
+
+{% set patternLibraryActive = true %}
+{% set showNavigation = true %}
+{% set componentsActive = true %}
+{% set currentPage = "autocomplete" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+        {{ subNavigation.nav([
+            {name: 'Activity log', url: '/pattern-library/components/activity-log', currentPage: true, active: true},
+            {name: 'Autocomplete', url: '/pattern-library/components/autocomplete', currentPage: false, active: true},
+            {name: 'Progress list', url: '/pattern-library/components/progress-list', currentPage: false, active: true},
+            {name: 'Task list', url: '/pattern-library/components/task-list', currentPage: false, active: true},
+            {name: 'Navigation', url: '/pattern-library/components/navigation', currentPage: false, active: true},
+            {name: 'Sub navigation', url: '/pattern-library/components/sub-navigation', currentPage: false, active: true}
+        ]) }}
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl">
+            Activity log
+        </h1>
+
+        <hr class="govuk-!-margin-bottom-6" />
+
+        <p class="govuk-body"></p>
+
+        <h2 class="govuk-heading-m"></h2>
+
+        <div class="example">
+            <div class="example-component">
+
+                <div class="activity-log govuk-body">
+
+                    <div class="activity-log__item">
+                        <div class="activity-log__left">
+                            <span class="activity-log__title">
+                                <strong>Grant offer letter approved</strong> for Verylong Company Name &amp; Sons Limited
+                            </span>
+                            <span class="activity-log__user">
+                                <strong>By:</strong>  Wendy Wallis, UKRI finance admin
+                            </span>
+                        </div>
+
+                        <div class="activity-log__right">
+                            <span class="activity-log__time">
+                                28 Feb 2019, 07:47 AM
+                            </span>
+                            <a href="#" class="activity-log__link">View grant offer letter</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-log__item">
+                        <div class="activity-log__left">
+                            <span class="activity-log__title">
+                                <strong>Grant offer letter published</strong>
+                            </span>
+                            <span class="activity-log__user">
+                                <strong>By:</strong>  Wendy Wallis, UKRI finance admin
+                            </span>
+                        </div>
+
+                        <div class="activity-log__right">
+                            <span class="activity-log__time">
+                                26 Jan 2019, 07:47 AM
+                            </span>
+                            <a href="#" class="activity-log__link">View bank details</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-log__item">
+                        <div class="activity-log__left">
+                            <span class="activity-log__title">
+                                <strong>Eligibility query raised</strong> for Electric Sounds Ltd
+                            </span>
+                            <span class="activity-log__user">
+                                <strong>By:</strong>  Bartholomew  J. Biggun Junior, project manager
+                            </span>
+                        </div>
+
+                        <div class="activity-log__right">
+                            <span class="activity-log__time">
+                                1 Oct 2018, 07:47 AM
+                            </span>
+                            <a href="#" class="activity-log__link">View eligibility query</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <ul class="example-tab--navigation">
+                <li>
+                    <a href="#" class="govuk-link" id="html">HTML</a>
+                </li>
+                <li>
+                    <a href="#" class="govuk-link" id="notes">Notes</a>
+                </li>
+            </ul>
+            <div class="example-tab" id="html-tab">
+                <pre>
+                    <code class="html">
+<div class="activity-log govuk-body">
+    <div class="activity-log__item">
+        <div class="activity-log__left">
+            <span class="activity-log__title">
+                <strong>Grant offer letter approved</strong> for Verylong Company Name &amp; Sons Limited
+            </span>
+            <span class="activity-log__user">
+                <strong>By:</strong>  Wendy Wallis, UKRI finance admin
+            </span>
+        </div>
+        <div class="activity-log__right">
+            <span class="activity-log__time">
+                28 Feb 2019, 07:47 AM
+            </span>
+            <a href="#" class="activity-log__link">View grant offer letter</a>
+        </div>
+    </div>
+</div>
+                    </code>
+                </pre>
+            </div>
+            <div class="example-tab" id="notes-tab">
+                <p class="govuk-body">Add notes here.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

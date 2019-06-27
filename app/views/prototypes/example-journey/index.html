@@ -1,6 +1,7 @@
 
 {% extends "layout.html" %}
 {% import "includes/sub-navigation.html" as subNavigation %}
+{% import "partials/button.html" as formControl %}
 
 {% block pageTitle %}Example journey{% endblock %}
 
@@ -21,6 +22,20 @@
         <p class="govuk-body">Testing routes</p>
 
         <p>{{name}}</p>
+
+        <form action="#" name="testForm" method="post">
+            <label class="" for="fullName">
+                Full name
+            </label>
+            <input name="name" id="fullName">
+            <button type="submit">Submit</button>
+            {{ formControl.button([{
+            type: 'submit',
+            classes: 'app-submit-btn',
+            text: 'Continue'
+            }])
+            }}
+        </form>
     </div>
 </div>
 

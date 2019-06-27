@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en" class="govuk-template "><head>
+    <meta charset="utf-8">
+    <title>
+        Print version with CSS
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>#main-content > [style="padding:10px 0 0 0 !important;"]
+    {display:none !important;}</style></head>
+<body class="govuk-template__body  js-enabled"><script async="" src="/browser-sync/browser-sync-client.js?v=2.26.3"></script>
+
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+        <style>
+            @media print {
+
+                header,
+                footer,
+                .govuk-phase-banner {
+                    display: none !important;
+                }
+
+                .letter-size {
+                    padding: 4em;
+                }
+                .letter-image {
+                    max-width: 12em;
+                    padding: 0 0 4em 0;
+                }
+            }
+            .letter-size,
+            .letter-size * {
+                font-family: "Arial", "Helvetica", sans-serif;
+                font-size: 10pt;
+            }
+
+            .letter-table {
+                border-collapse: collapse;
+                max-width: 100%;
+                font-size: 12px;
+            }
+
+            .letter-table th,
+            .letter-table td {
+                padding: 4px;
+                border: 1px solid #000;
+                text-align: left;
+                font-size: 12px;
+            }
+
+            .letter-table strong {
+                font-size: 12px;
+            }
+
+            .letter-table {
+                text-align: right;
+            }
+            .letter-list {
+
+            }
+            .letter-list li {
+                padding: 4px 0
+            }
+
+            .letter-size--terms,
+            .letter-size--terms * {
+                font-size: 10pt;
+            }
+
+            .heading-large {
+                font-size:36px;
+            }
+
+        </style>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full letter-size">
+
+                <h2 class="heading-large">Table for single industry  partner:</h2>
+                <table class="letter-table">
+                    <thead>
+                    <tr>
+                        <th>Industry costs</th>
+                        <th style="text-align:right;">[partner_company_name]</th>
+                    </thead>
+                    <tbody><tr>
+                        <td>Labour</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Overheads</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Capital usage</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Subcontract </td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs1</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs2</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs3</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs4</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs5</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs WBBA</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Total eligible costs</strong></td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Rate of grant (%)</strong></td>
+                        <td style="text-align:right;">x%</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Total grant</strong></td>
+                        <td style="text-align:right;">£x</td>
+                    </tbody></table>
+
+                <br>
+                <br>
+                <br>
+
+
+                <h2 class="heading-large">Table for multiple industry partners:</h2>
+                <table class="letter-table">
+                    <thead>
+                    <tr>
+                        <th>Industry costs</th>
+                        <th style="text-align:right;">[partner_company_name_1]</th>
+                        <th style="text-align:right;">[partner_company_name_2]</th>
+                        <th style="text-align:right;">[partner_company_name_3]</th>
+                        <th style="text-align:right;">[partner_company_name_4]</th>
+                        <th style="text-align:right;">Total (industry)</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr>
+                        <td>Labour</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Overheads</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Capital usage</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Subcontract </td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs1</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs2</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs3</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs4</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs5</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other Costs WBBA</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Total eligible costs</strong></td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Rate of grant (%)</strong></td>
+                        <td style="text-align:right;">x%</td>
+                        <td style="text-align:right;">x%</td>
+                        <td style="text-align:right;">x%</td>
+                        <td style="text-align:right;">x%</td>
+                        <td style="text-align:right;">x%</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><strong>Total grant</strong></td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+
+
+                <h2 class="heading-large">Table for single academic partner:</h2>
+
+                <table class=" letter-table ">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Academic costs</th>
+                        <th style="text-align:right;">[academic_institution_name]n</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="4">Directly incurred</td>
+                        <td>Staff</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other costs</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">Directly allocated</td>
+                        <td>Investigators</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Estates</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other DA</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="">Indirect costs</td>
+                        <td>Indirect costs</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="4">Exceptions</td>
+                        <td>Staff</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other costs</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Total eligible costs</strong></td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Rate of grant (%)</strong></td>
+                        <td style="text-align:right;">x%</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Total grant</strong></td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+
+                <h2 class="heading-large">Table for multiple academic partners:</h2>
+
+                <table class=" letter-table ">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Academic costs</th>
+                        <th style="text-align:right;">[academic_institution_1_name]</th>
+                        <th style="text-align:right;">[academic_institution_2_name]</th>
+                        <th style="text-align:right;">Totals</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="4">Directly incurred</td>
+                        <td>Staff</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other costs</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">Directly allocated</td>
+                        <td>Investigators</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Estates</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other DA</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="">Indirect costs</td>
+                        <td>Indirect costs</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="4">Exceptions</td>
+                        <td>Staff</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Travel and subsistence</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Other costs</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Total eligible costs</strong></td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Rate of grant (%)</strong></td>
+                        <td style="text-align:right;">x%</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:right;"><strong>Total grant</strong></td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+
+                <h2 class="heading-large">Summary table:</h2>
+
+                <table class=" letter-table ">
+                    <thead>
+                    <tr>
+                        <th>Summary</th>
+                        <th style="text-align:right;">Totals (£)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Total project costs</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Total project grant</td>
+                        <td style="text-align:right;">£x</td>
+                    </tr>
+                    <tr>
+                        <td>Rate of grant (%)</td>
+                        <td style="text-align:right;">x%</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div class="govuk-grid-column-one-quarter">&nbsp;</div>
+        </div>
+
+
+
+    </main>
+</div>
+
+
+
+
+</body></html>
