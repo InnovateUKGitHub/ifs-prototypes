@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+{% import "includes/sub-navigation.html" as subNavigation %}
+
+{% block pageTitle %}Survey Monkey tPoC{% endblock %}
+
+{% set prototypesActive = true %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+        <h2 class="govuk-heading-s">&nbsp;</h2>
+        {{ subNavigation.nav([
+            {name: 'Item', url: '/prototypes/example-journey', currentPage: false, active: true},
+            {name: 'Survey', url: '/prototypes/survey', currentPage: true, active: true}
+        ]) }}
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl">Survey Monkey</h1>
+
+        <p class="govuk-body">
+            The link below contains randomised applicationID and userID as URL encoded variables. Take a note of these if you wish to track your responses in the survey report. You can do the survey as many times as you like and refreshing this page will create new values.
+        </p>
+
+        <p class="govuk-body">
+            applicationID = <strong>{{applicationID}}</strong>
+            <br>
+            userID = <strong>{{userID}}</strong>
+        </p>
+
+        <p class="govuk-body">
+            <a href="https://www.surveymonkey.co.uk/r/LCFGX5C?applicationID={{applicationID}}&userID={{userID}}" target="_blank">https://www.surveymonkey.co.uk/r/LCFGX5C?applicationID={{applicationID}}&userID={{userID}}</a>
+        </p>
+
+    </div>
+</div>
+
+{% endblock %}
