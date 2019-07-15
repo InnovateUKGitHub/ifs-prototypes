@@ -1,0 +1,554 @@
+
+{% extends "layout.html" %}
+{% import "includes/sub-navigation.html" as subNavigation %}
+
+{% block pageTitle %}Dashboard{% endblock %}
+
+{% set prototypesActive = true %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+        <div class="message-alert">
+            <p class="govuk-body">Please complete the <a href="https://www.surveymonkey.co.uk/r/LCFGX5C?applicationID={{applicationID}}&userID={{userID}}" target="_blank">diversity survey (opens in a new window)</a>. This will help us understand how effective the service is.</p>
+            <p class="govuk-body">Or you can <a href="#" class="govuk-link">remove this notification from your dashboard</a>.</p>
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-l">Applications</h1>
+
+        <section class="projects-in-setup">
+            <div class="progress-list">
+                <h2 class="govuk-heading-m">Set up your project</h2>
+                <ul>
+                    <li>
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/project-setup/project/16?origin=APPLICANT_DASHBOARD" class="govuk-link">Smart skips for plastic storage and retrieval</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Project number: <span>170</span></li>
+                                <li>Competition: <span>Biosciences round three: plastic recovery in the industrial sector</span></li>
+                            </ul>
+                        </div>
+                        <div class="status">
+                            <strong class="status-msg msg-progress">
+                                Project in setup
+                            </strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/project-setup/project/4?origin=APPLICANT_DASHBOARD" class="govuk-link">Magic material</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Project number: <span>112</span></li>
+                                <li>Competition: <span>New designs for a circular economy</span></li>
+                            </ul>
+                        </div>
+                        <div class="status">
+                            <strong class="status-msg msg-progress">
+                                Project in setup
+                            </strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/project-setup/project/1?origin=APPLICANT_DASHBOARD" class="govuk-link">Mobile Phone Data for Logistics Analytics</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Project number: <span>11</span></li>
+                                <li>Competition: <span>Connected digital additive manufacturing</span></li>
+                            </ul>
+                        </div>
+                        <div class="status">
+                            <strong class="status-msg msg-progress">
+                                Project in setup
+                            </strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <div class="govuk-grid-column-full">
+
+        <section class="in-progress">
+            <div class="progress-list">
+                <h2 class="govuk-heading-m">Applications in progress</h2>
+                <ul>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/62/track" class="govuk-link">Application with ineligible</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>62</span></li>
+                                <li>Competition: <span>Sustainable living models for the future</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/103/track" class="govuk-link">Sensing &amp; Control network using the lighting infrastructure</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>103</span></li>
+                                <li>Competition: <span>Internet of Things</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/167/track" class="govuk-link">Expression of Interest: Assistive technologies for caregivers - Application 1</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>167</span></li>
+                                <li>Competition: <span>Expression of Interest: Assistive technologies for caregivers</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/168/track" class="govuk-link">Smart monitoring in high-pressure engineering systems - Application 1</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>168</span></li>
+                                <li>Competition: <span>Smart monitoring in high-pressure engineering systems</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/149" class="govuk-link">Climate science the history of Greenland's ice</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>149</span></li>
+                                <li>Competition: <span>Predicting market trends programme</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">729</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">13</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/148" class="govuk-link">Evolution of the global phosphorus cycle</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>148</span></li>
+                                <li>Competition: <span>Predicting market trends programme</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">729</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">13</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/151" class="govuk-link">Hydrology the dynamics of Earth's surface water</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>151</span></li>
+                                <li>Competition: <span>Predicting market trends programme</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">729</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">13</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/152" class="govuk-link">Planetary science Pluto's telltale heart</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>152</span></li>
+                                <li>Competition: <span>Predicting market trends programme</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">729</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">13</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/154" class="govuk-link">Safeguarding pollinators and their values to human well-being</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>154</span></li>
+                                <li>Competition: <span>Predicting market trends programme</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">729</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">13</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/178/track" class="govuk-link">Performance Application 1</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>178</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/179/track" class="govuk-link">Performance Application 2</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>179</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/180/track" class="govuk-link">Performance Application 3</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>180</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+
+
+
+                            <span class="status-msg msg-deadline-waiting">Awaiting assessment</span>
+                            <span class="status-msg msg-progress">Application submitted</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/181" class="govuk-link">Performance Application 4</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>181</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/182" class="govuk-link">Performance Application 5</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>182</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">91% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/183" class="govuk-link">Performance Application 6</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>183</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/184" class="govuk-link">Performance Application 7</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>184</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/185" class="govuk-link">Performance Application 8</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>185</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                    <li class="status-2-col">
+                        <div class="task">
+                            <h3 class="govuk-heading-s">
+                                <a href="/application/186" class="govuk-link">Performance Application 9</a>
+                            </h3>
+                            <ul class="application-details">
+                                <li>Application number: <span>186</span></li>
+                                <li>Competition: <span>Performance testing competition</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="status">
+
+                            <div class="status-msg msg-deadline">
+                                <strong class="govuk-!-font-size-24 govuk-!-font-weight-bold days-remaining">746</strong> <br>
+                                days left <br>
+                                Deadline
+                                <span class="day">30</span>
+                                <span class="month">Jul</span>
+                                <span class="year">2021</span>
+                            </div>
+
+                            <span class="status-msg msg-progress">0% complete</span>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+{% endblock %}

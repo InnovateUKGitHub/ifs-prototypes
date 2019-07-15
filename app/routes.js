@@ -18,7 +18,7 @@ router.post('/prototypes/example-journey', function(req, res) {
 
 });
 
-// Survey
+// Survey Monkey demo
 router.get('/prototypes/survey', function(req, res) {
   let applicationOptions, applicationID, userID;
 
@@ -34,13 +34,6 @@ router.get('/prototypes/survey', function(req, res) {
     'userID' : userID
   });
 });
-
-
-
-
-
-
-
 
 
 //
