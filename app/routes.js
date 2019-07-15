@@ -35,6 +35,23 @@ router.get('/prototypes/survey', function(req, res) {
   });
 });
 
+// Survey Monkey demo
+router.get('/prototypes/survey/dashboard', function(req, res) {
+  let applicationOptions, applicationID, userID;
+
+  applicationOptions = ['110','111','112','113','114','114','115','116','117','118','119','120','121','122','122','123','124','125','126','127','128','129'];
+
+  applicationID = applicationOptions[Math.floor(Math.random() * applicationOptions.length)];
+  sessionID = Math.floor(Math.random() * 9999) + 1000;
+  console.log('sessionID = ' + sessionID + "\n" + 'applicationID = ' + applicationID);
+
+
+  res.render('prototypes/survey/dashboard.html', {
+    'applicationID' : applicationID,
+    'sessionID' : sessionID
+  });
+});
+
 
 //
 module.exports = router
